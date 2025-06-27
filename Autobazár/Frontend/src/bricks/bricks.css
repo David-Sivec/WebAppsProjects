@@ -1,0 +1,8 @@
+/*Section with default styling for every file*/
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/**section with Vehicles styles*/
