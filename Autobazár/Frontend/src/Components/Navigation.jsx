@@ -2,11 +2,11 @@ import { Link } from 'react-router-dom'
 import './Navigation.css'
 
 function Navigation() {
+  let count = 0
 
   function sidebar() {
     const menu = document.querySelector(".menu")
     const sidebar1 = document.querySelector(".sidebar")
-    let count = 0
     menu.addEventListener("click", () => {
       if (count === 0) {
       sidebar1.style.right = "0"
@@ -14,7 +14,7 @@ function Navigation() {
       console.log(count);
       
       }
-      if (count === 1) {
+      else {
         sidebar1.style.right = "-300px"
         count = 0
         console.log(count);
