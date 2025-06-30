@@ -30,10 +30,10 @@ function Navigation() {
           <Link to="/" className='logo'>CarConnect</Link>
         </div>
         <div className="links">
-          <Link to="/vehicles" className='link'>Vozidlá</Link>
-          <Link to="/my-advertisements" className='link'>Moje inzeráty</Link>
-          <Link to="/contact" className='link'>Kontakt</Link>
-          <Link to="/login" className='link'>Prihlásenie</Link>
+          <Link to="/vehicles" className='link'>Vehicles</Link>
+          <Link to="/my-advertisements" className='link'>My Advertisements</Link>
+          <Link to="/contact" className='link'>Contact</Link>
+          <Link to="/login" className='link'>Log in</Link>
           <div className="menu" onClick={sidebar}>
             <span></span>
             <span className='span'></span>
@@ -42,10 +42,10 @@ function Navigation() {
         </div>
       </nav>
       <div className="sidebar">
-        <Link to="/vehicles" className='line'>Vozidlá</Link>
-        <Link to="/my-advertisements" className='line'>Moje inzeráty</Link>
-        <Link to="/contact" className='line'>Kontakt</Link>
-        <Link to="/login" className='line'>Prihlásenie</Link>
+        <Link to="/vehicles" className='line'></Link>
+        <Link to="/my-advertisements" className='line'></Link>
+        <Link to="/contact" className='line'></Link>
+        <Link to="/login" className='line'></Link>
       </div>
     </div>
   )
