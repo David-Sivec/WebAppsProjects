@@ -1,8 +1,8 @@
 import './App.css'
-import Vehicles from "./bricks/Vehicles"
-import MyAdvertisements from "./bricks/MyAdvertisements"
-import Contact from "./bricks/Contact"
-import Login from "./bricks/Login"
+import Vehicles from "./Links/Vehicles"
+import MyAdvertisements from "./Links/MyAdvertisements"
+import Contact from "./Links/Contact"
+import Login from "./Links/Login"
 
 function App() {
   return (
