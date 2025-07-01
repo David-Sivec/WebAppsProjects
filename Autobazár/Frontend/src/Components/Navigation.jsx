@@ -1,51 +1,40 @@
 import { Link } from 'react-router-dom'
 import './Navigation.css'
+import { useState } from 'react'
 
 function Navigation() {
-  let count = 0
 
-  function sidebar() {
-    const menu = document.querySelector(".menu")
-    const sidebar1 = document.querySelector(".sidebar")
-    menu.addEventListener("click", () => {
-      if (count === 0) {
-      sidebar1.style.right = "0"
-      count = 1
-      console.log(count);
-      
-      }
-      else {
-        sidebar1.style.right = "-300px"
-        count = 0
-        console.log(count);
-        
-      }
-    })
-  }  
+  const [isSidebarOpen, setisSidebarOpen] = useState(false)
+
+  const toogleSidebar = () => {
+    setisSidebarOpen(!isSidebarOpen)
+  }
 
   return (
     <div>
       <nav>
         <div className="logo">
-          <Link to="/" className='logo'>CarConnect</Link>
+          <Link to="/" className='logo'>
+            <img src="./images/logo.png" alt="" className='img' />
+          </Link>
         </div>
         <div className="links">
           <Link to="/vehicles" className='link'>Vehicles</Link>
           <Link to="/my-advertisements" className='link'>My Advertisements</Link>
           <Link to="/contact" className='link'>Contact</Link>
           <Link to="/login" className='link'>Log in</Link>
-          <div className="menu" onClick={sidebar}>
-            <span></span>
-            <span className='span'></span>
-            <span></span>
+          <div className={`menu ${isSidebarOpen ? "open" : ""}`} onClick={toogleSidebar}>
+            <span className='menu-line line-1'></span>
+            <span className='menu-line line-2'></span>
+            <span className='menu-line line-3'></span>
           </div>
         </div>
       </nav>
-      <div className="sidebar">
-        <Link to="/vehicles" className='line'></Link>
-        <Link to="/my-advertisements" className='line'></Link>
-        <Link to="/contact" className='line'></Link>
-        <Link to="/login" className='line'></Link>
+      <div className={`sidebar ${isSidebarOpen ? "open" : ""}`}>
+        <Link to="/vehicles" className='line'>Vehicles</Link>
+        <Link to="/my-advertisements" className='line'>My Advertisements</Link>
+        <Link to="/contact" className='line'>Contact</Link>
+        <Link to="/login" className='line'>Log in</Link>
       </div>
     </div>
   )
