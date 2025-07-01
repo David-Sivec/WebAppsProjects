@@ -15,6 +15,7 @@ function App() {
     <>
       {/*navigation component*/}
       <Navigation />
+      <p>Čau uz som tu. Let's gooooooooooooooooo.</p>
       {/*routes for the links*/}
       <Routes>
         <Route path="/" element={<HomePage />} />
