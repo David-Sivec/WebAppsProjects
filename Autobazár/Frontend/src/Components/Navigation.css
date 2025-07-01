@@ -93,7 +93,7 @@ nav {
   width: 300px;
   display: flex;
   flex-direction: column;
-  background-color: var(--dark-blue);
+  background: linear-gradient(135deg, var(--dark-blue), var(--very-dark-blue));
   padding: 10px;
   gap: 30px;
   font-size: 1.2em;
@@ -104,17 +104,7 @@ nav {
   right: 0;
 }
 
-/*.line::after {
-  position: absolute;
-  bottom: -5px;
-  z-index: 2000;
-  left: 0;
-  right: 0;
-  height: 10px;
-  background-color: #002446;
-
-}*/
-
+/*responzive design for navigation*/
 @media(max-width: 800px) {
   .link {
     display: none;
@@ -122,5 +112,9 @@ nav {
 
   .menu {
     display: flex;
+  }
+
+  nav {
+    padding-left: 0;
   }
 }

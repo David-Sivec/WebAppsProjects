@@ -13,7 +13,9 @@ import { Routes, Route } from 'react-router-dom'
 function App() {
   return (
     <>
+      {/*navigation component*/}
       <Navigation />
+      {/*routes for the links*/}
       <Routes>
         <Route path="/" element={<HomePage />} />
         <Route path="/vehicles" element={<Vehicles />} />

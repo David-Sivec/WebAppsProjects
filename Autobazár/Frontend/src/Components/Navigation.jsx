@@ -1,17 +1,20 @@
+//imports
 import { Link } from 'react-router-dom'
 import './Navigation.css'
 import { useState } from 'react'
 
 function Navigation() {
-
+  //*usestate for sidebar and hamburger menu
   const [isSidebarOpen, setisSidebarOpen] = useState(false)
 
+  //*function for sidebar to pop up
   const toogleSidebar = () => {
     setisSidebarOpen(!isSidebarOpen)
   }
 
   return (
     <div>
+      {/*navigation bar with logo and link to subpages*/}
       <nav>
         <div className="logo">
           <Link to="/" className='logo'>
@@ -30,6 +33,7 @@ function Navigation() {
           </div>
         </div>
       </nav>
+      {/*sidebar for responzive design with links to subpages*/}
       <div className={`sidebar ${isSidebarOpen ? "open" : ""}`}>
         <Link to="/vehicles" className='line'>Vehicles</Link>
         <Link to="/my-advertisements" className='line'>My Advertisements</Link>
