@@ -104,6 +104,21 @@ nav {
   right: 0;
 }
 
+.line::after {
+  content: "";
+  position: absolute;
+  bottom: -5px;
+  left: 0;
+  width: 0;
+  height: 3px;
+  background-color: var(--light-blue);
+}
+
+.line:hover::after {
+  width: 100%;
+  transition: width 0.4s;
+}
+
 /*responzive design for navigation*/
 @media(max-width: 800px) {
   .link {
