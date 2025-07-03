@@ -11,8 +11,13 @@
 
 /*Variables for colors*/
 :root {
-  --very-dark-blue: #011121;
-  --dark-blue: #002446;
+  /*--very-dark-blue: #011121;*/
+  --very-dark-blue: #1e1e2f;
+  /*--dark-blue: #131e29;
+  --dark-blue: #131e29;*/
+  /*--dark-bluee: #001b36;*/
+  --dark-bluee: #2b2d42;
+  --blue: #00b4d8;
   --light-blue: #98CDFF;
   --white: #FFFFFF;
 }
@@ -68,9 +73,9 @@
   align-items: center;
   width: 80%;
   height: 350px;
-  background-color: var(--dark-blue);
+  background-color: var(--dark-bluee);
   border-radius: 10px;
-  border: 2px solid var(--light-blue);
+  /*border: 2px solid var(--light-blue);*/
 }
 
 .best-advertisements, .add-advertisement {
@@ -79,28 +84,43 @@
   align-items: center;
   width: 80%;
   height: 300px;
-  background-color: var(--dark-blue);
+  background-color: var(--dark-bluee);
   border-radius: 10px;
-  border: 2px solid var(--light-blue);
+  /*border: 2px solid var(--light-blue);*/
   margin-top: 20px;
+}
+
+.add-advertisement-section {
+  margin-right: 20px;
+}
+
+.add-advertisement {
+  width: 100%;
+  height: 405px;
 }
 
 .cards {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(25%, 1fr));
-  width: 80%;
+  grid-template-columns: repeat(auto-fill, minmax(100%, 1fr));
+  width: 100%;
   padding-top: 20px;
 }
 
 .card {
-  background-color: var(--dark-blue);
+  background-color: var(--dark-bluee);
   border-radius: 10px;
-  border: 2px solid var(--light-blue);
   color: var(--white);
   padding: 20px;
-  margin: 10px;
+  margin: 10px 0;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-  height: 150px;
+  height: 100px;
+}
+
+.box2 {
+  display: grid;
+  grid-template-columns: 3fr 1fr;
+  width: 80%;
+  padding-top: 20px;
 }
 
 .infinite-scroll {
@@ -131,7 +151,7 @@ h2 {
 }
 
 .recension {
-  background-color: var(--dark-blue);
+  background-color: var(--dark-bluee);
   border-radius: 10px;
   border: 2px solid var(--light-blue);
   color: var(--white);
@@ -158,4 +178,28 @@ h2 {
   color: var(--very-dark-blue);
   width: 100%;
   height: 250px;
+}
+
+/*stylings for vehicles subpage*/
+.vehicles {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: var(--very-dark-blue);
+  padding-top: 70px;
+}
+
+.header {
+  background-color: var(--light-blue);
+  width: 100%;
+  color: var(--very-dark-blue);
+  padding: 10px 20px;
+  text-align: center;
+}
+
+.box {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  width: 100%;
+  margin-top: 20px;
 }
