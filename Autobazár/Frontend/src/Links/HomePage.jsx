@@ -16,9 +16,8 @@ function HomePage() {
           </div>
         </div>
         {/* Best advertisements section */}
-        <h2>Best advertisements</h2>
         <div className="best-advertisements">
-          hi
+          <h2>Best advertisements</h2>
         </div>
         {/* Cards section showcasing numbers */}
         <div className="box2">
