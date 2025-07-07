@@ -80,61 +80,6 @@
   border: 1px solid var(--border);
 }
 
-.best-advertisements, .add-advertisement {
-  display: flex;
-  width: 80%;
-  height: 300px;
-  background-color: var(--dark-bluee);
-  border-radius: 10px;
-  border: 2px solid var(--border);
-  margin-top: 20px;
-}
-
-.add-advertisement-section {
-  margin-right: 20px;
-}
-
-.add-advertisement {
-  width: 100%;
-  height: 405px;
-}
-
-.cards {
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(100%, 1fr));
-  width: 100%;
-  padding-top: 20px;
-}
-
-.card {
-  background-color: var(--dark-bluee);
-  border-radius: 10px;
-  color: var(--white);
-  padding: 20px;
-  margin: 10px 0;
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-  height: 100px;
-}
-
-.box2 {
-  display: grid;
-  grid-template-columns: 3fr 1fr;
-  width: 80%;
-  padding-top: 20px;
-  margin-top: 70px;
-}
-
-.infinite-scroll {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 80%;
-  height: 200px;
-  border-top: 2px solid var(--light-blue);
-  border-bottom: 2px solid var(--light-blue);
-  margin-top: 20px;
-}
-
 h2 {
   color: var(--white);
   font-size: 2rem;
@@ -160,25 +105,6 @@ h2 {
   margin: 10px;
   height: 300px;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-}
-
-.contact {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 80%;
-  height: 400px;
-  border-top: 2px solid var(--light-blue);
-  border-bottom: 2px solid var(--light-blue);
-  margin-top: 20px;
-  margin-bottom: 20px;
-}
-
-.footer {
-  background-color: var(--light-blue);
-  color: var(--very-dark-blue);
-  width: 100%;
-  height: 250px;
 }
 
 /*stylings for vehicles subpage*/

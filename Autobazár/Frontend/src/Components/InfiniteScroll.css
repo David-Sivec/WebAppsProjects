@@ -1,0 +1,35 @@
+/*imports font for subpages*/
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+
+/*Section with default styling for every file*/
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Noto Sans", sans-serif;
+}
+
+/*Variables for colors*/
+:root {
+  /*--very-dark-blue: #011121;*/
+  --very-dark-blue: #1e1e2f;
+  /*--dark-blue: #131e29;
+  --dark-blue: #131e29;*/
+  /*--dark-bluee: #001b36;*/
+  --dark-bluee: #2b2d42;
+  --blue: #00b4d8;
+  --light-blue: #98CDFF;
+  --white: #FFFFFF;
+  --border: #3f4263;
+}
+
+.infinite-scroll {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 80%;
+  height: 200px;
+  border-top: 2px solid var(--light-blue);
+  border-bottom: 2px solid var(--light-blue);
+  margin-top: 20px;
+}

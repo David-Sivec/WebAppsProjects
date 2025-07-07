@@ -1,0 +1,99 @@
+/*imports font for subpages*/
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+
+/*Section with default styling for every file*/
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Noto Sans", sans-serif;
+}
+
+/*Variables for colors*/
+:root {
+  /*--very-dark-blue: #011121;*/
+  --very-dark-blue: #1e1e2f;
+  /*--dark-blue: #131e29;
+  --dark-blue: #131e29;*/
+  /*--dark-bluee: #001b36;*/
+  --dark-bluee: #2b2d42;
+  --blue: #00b4d8;
+  --light-blue: #98CDFF;
+  --white: #FFFFFF;
+  --border: #3f4263;
+}
+
+.best-advertisements {
+  display: flex;
+  flex-direction: column;
+  width: 80%;
+  height: 320px;
+  background-color: var(--dark-bluee);
+  border-radius: 10px;
+  border: 1px solid var(--border);
+  margin-top: 20px;
+}
+
+.more-link {
+  color: var(--white);
+  text-decoration: none;
+  font-size: 1.2rem;
+  margin-top: 10px;
+  display: inline-block;
+}
+
+.more-link::after {
+  content: ' →';
+  color: var(--light-blue);
+}
+
+.best-advertisements-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 10px;
+}
+
+.best-advertisements-header h2 {
+  padding: 0;
+  margin-top: 5px;
+}
+
+.best-advertisement-cards {
+  display: flex;
+  width: calc(100% - 10px);
+  overflow-y: auto;
+  scroll-snap-type: x mandatory;
+  scrollbar-color: var(--light-blue) var(--dark-bluee);
+  gap: 20px;
+  padding: 10px;
+  margin-left: 10px;
+}
+
+.best-advertisement-card {
+  width: 200px;
+  height: 220px;
+  border-radius: 8px;
+  background-color: var(--border);
+  scroll-snap-align: start;
+  scroll-snap-stop: always;
+  flex: 0 0 auto;
+}
+
+.best-advertisement-card img {
+  width: 100%;
+  height: 150px;
+  border-radius: 5px;
+}
+
+.best-advertisement-card h3 {
+  font-size: 1.2rem;
+  color: var(--white);
+  margin: 0 5px;
+}
+
+.best-advertisement-card p {
+  font-size: 1rem;
+  color: var(--white);
+  margin: 5px;
+}

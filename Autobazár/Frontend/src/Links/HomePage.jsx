@@ -1,8 +1,15 @@
 //css imports
 import "./bricks.css"
+//imports components for infinite scroll
+import InfiniteScroll from "../Components/InfiniteScroll"
+import BestAdvertisements from "../Components/BestAdvertisements"
+import Box2 from "../Components/Box2"
+import Contact from "../Components/Contact"
+import Footer from "../Components/Footer"
 
 function HomePage() {
   //is a platform designed to connect car enthusiasts, buyers, and sellers. Whether you're looking to buy your dream car, sell your vehicle, or simply explore the automotive world, CarConnect has you covered.
+
   return(
     <div className="homepage">
       {/* HomePage component serves as the main landing page for the CarConnect platform. It features an introduction, best advertisements, a card section, an advertisement submission area, infinite scroll for more content, recensions, and a contact form. */}
@@ -16,29 +23,11 @@ function HomePage() {
           </div>
         </div>
         {/* Best advertisements section */}
-        <div className="best-advertisements">
-          <h2>Best advertisements</h2>
-        </div>
+        <BestAdvertisements />
         {/* Cards section showcasing numbers */}
-        <div className="box2">
-          {/* Add advertisement section */}
-          <div className="add-advertisement-section">
-            <h2 className="header">Add your Advertisement</h2>
-            <div className="add-advertisement">
-              hi
-            </div>
-          </div>
-          <div className="cards">
-            <div className="card">hi</div>
-            <div className="card">hi</div>
-            <div className="card">hi</div>
-            <div className="card">hi</div>
-          </div>
-        </div>
+        <Box2 />
         {/* Infinite scroll section with vehicle brands */}
-        <div className="infinite-scroll">
-          hi
-        </div>
+        <InfiniteScroll />
         {/* Recensions section with user reviews */}
         <h2>Recensions</h2>
         <div className="recensions">
@@ -47,12 +36,10 @@ function HomePage() {
         </div>
         {/* Contact form section */}
         <h2>Contact formular</h2>
-        <div className="contact"></div>
+        <Contact />
       </div>
       {/* Footer section */}
-      <div className="footer">
-        footer
-      </div>
+      <Footer />
     </div>
   )
 }
