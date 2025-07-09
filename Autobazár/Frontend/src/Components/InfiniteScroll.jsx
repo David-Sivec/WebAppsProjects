@@ -43,11 +43,25 @@ function InfiniteScroll() {
         </div>
       </div>
       <div className="brands">
-        <div className="brand b1"></div>
-        <div className="brand b2"></div>
-        <div className="brand b3"></div>
-        <div className="brand b4"></div>
-        <div className="brand b5"></div>
+        <div className="brand b1">
+          <img src="./brands/maserati.png" alt="" className="i-s-img" />
+          <p>Maserati</p>
+        </div>
+        <div className="brand b2">
+          <img src="./brands/toyota.png" alt="" className="i-s-img" />
+          <p>Toyota</p>
+        </div>
+        <div className="brand b3">
+          <img src="./brands/ford.png" alt="" className="i-s-img2" />
+        </div>
+        <div className="brand b4">
+          <img src="./brands/jaguar.png" alt="" className="i-s-img" />
+          <p>Jaguar</p>
+        </div>
+        <div className="brand b5">
+          <img src="./brands/volvo.png" alt="" className="i-s-img" />
+          <p>Volvo</p>
+        </div>
       </div>
     </div>
   )
