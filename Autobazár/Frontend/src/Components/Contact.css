@@ -25,7 +25,7 @@
 
 .contact {
   display: flex;
-  justify-content: center;
+  flex-direction: column;
   align-items: center;
   width: 80%;
   height: 400px;
@@ -33,4 +33,80 @@
   border-bottom: 2px solid var(--light-blue);
   margin-top: 20px;
   margin-bottom: 20px;
+  position: relative;
+}
+
+.under-text {
+  font-size: 1.3rem;
+  color: var(--light-blue);
+  margin-top: 20px;
+}
+
+.name-input, .email-input, .text-area {
+  width: 100%;
+  padding: 10px 0;
+  margin: 20px 0;
+  border: none;
+  outline: none;
+  background: transparent;
+  color: var(--white);
+  font-size: 1rem;
+  transition: background 0.3s;
+  z-index: 2;
+  position: relative;
+  resize: none;
+}
+
+.name-input:focus {
+  color: var(--dark-bluee);
+}
+
+.email-input:focus {
+  color: var(--dark-bluee);
+}
+
+.input-bg-name, .input-bg-email {
+  content: "";
+  position: absolute;
+  left: 18%;
+  width: 65%;
+  bottom: 280px;
+  height: 2px;
+  background: var(--light-blue);
+  border-radius: 4px;
+  z-index: 1;
+  transition: height 0.3s;
+  pointer-events: none;
+}
+
+.input-bg-email {
+  bottom: 200px;
+}
+
+.email-input:focus + .input-bg-email {
+  bottom: 205px;
+  height: 42px;
+}
+
+.name-input:focus + .input-bg-name {
+  bottom: 285px;
+  height: 42px;
+}
+
+.submit-btn {
+  width: 100%;
+  padding: 10px 0;
+  margin-top: 20px;
+  border: none;
+  border-radius: 5px;
+  background: var(--light-blue);
+  color: var(--white);
+  font-size: 1.2rem;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.3s;
+}
+
+.submit-btn:hover {
+  background-color: var(--dark-bluee);
+  transform: scale(1.05);
 }

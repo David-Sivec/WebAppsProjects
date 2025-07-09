@@ -36,7 +36,7 @@ function HomePage() {
           <div className="recension">hi</div>
         </div>
         {/* Contact form section */}
-        <h2>Contact formular</h2>
+        <h2>Contact us</h2>
         <Contact />
       </div>
       {/* Footer section */}
