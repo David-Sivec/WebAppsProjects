@@ -35,11 +35,34 @@
   position: relative;
 }
 
+.filtration h2 {
+  margin-bottom: 20px;
+  text-align: center;
+  width: calc(100% - 200px);
+}
+
 .filtration-wrapper {
   display: flex;
   justify-content: space-around;
   width: calc(100% - 200px);
   margin-bottom: 60px;
+}
+
+.filtration-btn {
+  padding: 10px;
+  width: 50%;
+  background-color: var(--light-blue);
+  border: none;
+  border-radius: 5px;
+  transition: all 0.3s;
+  cursor: pointer;
+  font-size: 1.2em;
+}
+
+.filtration-btn:hover {
+  background-color: var(--very-dark-blue);
+  color: var(--white);
+  scale: 1.05;
 }
 
 .filtration-header {
@@ -59,9 +82,14 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 100%;
   color: var(--white);
   font-size: 2.5em;
+  cursor: pointer;
+  transition: 0.5s;
+}
+
+.header-vehicle:hover {
+  justify-content: start;
 }
 
 .selection {

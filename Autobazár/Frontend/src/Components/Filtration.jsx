@@ -108,8 +108,9 @@ function Filtration() {
           })}
         </select>
       </div>
-      <button>Find Your Vehicle</button>
-      {selectedBrand && <p>Vybraná značka: {selectedBrand}</p>}
+      <div className="filtration-wrapper">
+        <button className="filtration-btn">Find Your Vehicle</button>
+      </div>
     </div>
   )
 }
