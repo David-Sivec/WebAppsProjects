@@ -1,0 +1,76 @@
+/*imports font for subpages*/
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+
+/*Section with default styling for every file*/
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Noto Sans", sans-serif;
+}
+
+/*Variables for colors*/
+:root {
+  /*--very-dark-blue: #011121;*/
+  --very-dark-blue: #1e1e2f;
+  /*--dark-blue: #131e29;
+  --dark-blue: #131e29;*/
+  /*--dark-bluee: #001b36;*/
+  --dark-bluee: #2b2d42;
+  --blue: #00b4d8;
+  --light-blue: #98CDFF;
+  --white: #FFFFFF;
+  --border: #3f4263;
+}
+
+.filtration {
+  display: flex;
+  flex-direction: column;
+  width: 80%;
+  height: 350px;
+  background-color: var(--dark-bluee);
+  border-radius: 10px;
+  border: 1px solid var(--border);
+  overflow: hidden;
+  position: relative;
+}
+
+.filtration-wrapper {
+  display: flex;
+  justify-content: space-around;
+  width: calc(100% - 200px);
+  margin-bottom: 60px;
+}
+
+.filtration-header {
+  display: flex;
+  flex-direction: column;
+  width: 200px;
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  top: 0;
+  background-color: var(--very-dark-blue);
+  box-shadow: -5px 0 10px rgba(0, 0, 0, 0.3);
+}
+
+.header-vehicle {
+  height: 25%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  color: var(--white);
+  font-size: 2.5em;
+}
+
+.selection {
+  padding: 5px;
+  background-color: var(--very-dark-blue);
+  color: var(--white);
+  outline: none;
+  border: 1px solid var(--border);
+  border-radius: 5px;
+  box-shadow: 8px 8px 10px rgba(0, 0, 0, 0.3);
+  font-size: 1.3em;
+}

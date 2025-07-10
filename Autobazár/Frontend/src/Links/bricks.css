@@ -69,17 +69,6 @@
   margin-bottom: 20px;
 }
 
-.filtration {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 80%;
-  height: 350px;
-  background-color: var(--dark-bluee);
-  border-radius: 10px;
-  border: 1px solid var(--border);
-}
-
 h2 {
   color: var(--white);
   font-size: 2rem;

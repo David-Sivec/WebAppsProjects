@@ -1,6 +1,7 @@
 //css imports
 import "./bricks.css"
-//imports components for infinite scroll
+//imports components for homepage
+import Filtration from "../Components/Filtration"
 import InfiniteScroll from "../Components/InfiniteScroll"
 import BestAdvertisements from "../Components/BestAdvertisements"
 import Box2 from "../Components/Box2"
@@ -18,9 +19,8 @@ function HomePage() {
         <div className="introduction">
           <h1>CarConnect</h1>
           <p className="text">Buy and sell cars easily with our community-driven online marketplace.</p>
-          <div className="filtration">
-            hi
-          </div>
+          {/* Filtration section */}
+          <Filtration />
         </div>
         {/* Best advertisements section */}
         <BestAdvertisements />
