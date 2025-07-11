@@ -2,6 +2,7 @@ import "./Filtration.css"
 import { useState, useEffect } from "react"
 import models from "../Models"
 import registrations from "../Registrations"
+import kilometers from "../Kilometers"
 
 function Filtration() {
   const [selectedBrand, setSelectedBrand] = useState("")
@@ -9,6 +10,7 @@ function Filtration() {
   const [selectedModel, setSelectedModel] = useState('')
   const [selectedVehicle, setSelectedVehicle] = useState(0)
   const [selectedYear, setSelectedYear] = useState("")
+  const [selectedKilometer, setSelectedKilometer] = useState("")
 
   const brands = [
     {id: 1, brand: "BMW"},
@@ -57,6 +59,10 @@ function Filtration() {
     setSelectedYear(event.target.value)
   }
 
+  const handleKilometer = (event) => {
+    setSelectedKilometer(event.target.value)
+  }
+
   return (
     <div className="filtration">
       <div className="filtration-header">
@@ -98,7 +104,7 @@ function Filtration() {
           </select>
         </section>
         <section>
-          <label>registration</label>
+          <label>registration year</label>
           <select className="selection" onChange={handleYear} value={selectedYear}>
             <option value="" disabled>Any</option>
             {registrations.map((index) => {
@@ -109,58 +115,32 @@ function Filtration() {
             })}
           </select>
         </section>
+      </div>
+      <div className="filtration-wrapper">
         <section>
-          <label>kilmometers</label>
-          <select className="selection" value={selectedBrand} onChange={handlechange} key={selectedBrand}>
+          <label>kilmometers up to</label>
+          <select className="selection" value={selectedKilometer} onChange={handleKilometer}>
             <option value="" disabled>Any</option>
-            {brands.map((index) => {
+            {kilometers.map((index) => {
               return (
               <option key={index.id} value={index.id}>
-                {index.brand}
+                {index.kilometer}
               </option>)
             })}
           </select>
         </section>
-      </div>
-      <div className="filtration-wrapper">
-        <select className="selection" value={selectedBrand} onChange={handlechange}>
-          <option value="" disabled>- Choose a car -</option>
-          {brands.map((index) => {
-            return (
-            <option key={index.id} value={index.model}>
-              {index.brand}
-            </option>)
-          })}
-        </select>
-        <select className="selection" value={selectedBrand} onChange={handlechange}>
-          <option value="" disabled>- Choose a car -</option>
-          {brands.map((index) => {
-            return (
-            <option key={index.id} value={index.brand}>
-              {index.brand}
-            </option>)
-          })}
-        </select>
-        <select className="selection" value={selectedBrand} onChange={handlechange}>
-          <option value="" disabled>- Choose a car -</option>
-          {brands.map((index) => {
-            return (
-            <option key={index.id} value={index.brand}>
-              {index.brand}
-            </option>)
-          })}
-        </select>
-        <select className="selection" value={selectedBrand} onChange={handlechange}>
-          <option value="" disabled>- Choose a car -</option>
-          {brands.map((index) => {
-            return (
-            <option key={index.id} value={index.brand}>
-              {index.brand}
-            </option>)
-          })}
-        </select>
-      </div>
-      <div className="filtration-wrapper">
+        <section>
+          <label>kilmometers up to</label>
+          <select className="selection" value={selectedKilometer} onChange={handleKilometer}>
+            <option value="" disabled>Any</option>
+            {kilometers.map((index) => {
+              return (
+              <option key={index.id} value={index.id}>
+                {index.kilometer}
+              </option>)
+            })}
+          </select>
+        </section>
         <button className="filtration-btn">Find Your Vehicle</button>
       </div>
     </div>

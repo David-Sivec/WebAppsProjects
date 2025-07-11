@@ -59,14 +59,15 @@
 }
 
 .filtration-btn {
-  padding: 10px;
-  width: 50%;
+  padding: 5px 10px;
+  width: 220px;
   background-color: var(--light-blue);
   border: none;
   border-radius: 5px;
   transition: all 0.3s;
   cursor: pointer;
   font-size: 1.2em;
+  margin-top: 22px;
 }
 
 .filtration-btn:hover {
