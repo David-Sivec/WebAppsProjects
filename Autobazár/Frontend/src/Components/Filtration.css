@@ -89,12 +89,13 @@
   transition: 0.5s;
 }
 
-.header-vehicle:hover {
+/*.header-vehicle:hover {
   width: 50px;
-}
+}*/
 
 .selection {
   padding: 5px;
+  width: 220px;
   background-color: var(--very-dark-blue);
   color: var(--white);
   outline: none;

@@ -1,0 +1,28 @@
+const models = [
+  {id: 1, model: "e36", identificator: 1},
+  {id: 2, model: "e38", identificator: 1},
+  {id: 3, model: "A4", identificator: 2},
+  {id: 4, model: "Q7", identificator: 2},
+  {id: 5, model: "190E", identificator: 3},
+  {id: 6, model: "SL500", identificator: 3},
+  {id: 7, model: "Kodiak", identificator: 4},
+  {id: 8, model: "Fabia", identificator: 4},
+  {id: 9, model: "Tiguan", identificator: 5},
+  {id: 10, model: "Passat", identificator: 5},
+  {id: 11, model: "Revoulto", identificator: 6},
+  {id: 12, model: "Urus", identificator: 6},
+  {id: 13, model: "f40", identificator: 7},
+  {id: 14, model: "812", identificator: 7},
+  {id: 15, model: "Focus", identificator: 8},
+  {id: 16, model: "Raptor", identificator: 8},
+  {id: 17, model: "xc90", identificator: 9},
+  {id: 18, model: "xc30", identificator: 9},
+  {id: 19, model: "MC12", identificator: 10},
+  {id: 20, model: "lavante", identificator: 10},
+  {id: 21, model: "f-space", identificator: 11},
+  {id: 22, model: "xf", identificator: 11},
+  {id: 23, model: "db12", identificator: 12},
+  {id: 24, model: "db10", identificator: 12},
+]
+
+export default models
