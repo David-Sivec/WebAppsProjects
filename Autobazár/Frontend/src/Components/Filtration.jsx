@@ -1,12 +1,14 @@
 import "./Filtration.css"
 import { useState, useEffect } from "react"
 import models from "../Models"
+import registrations from "../Registrations"
 
 function Filtration() {
   const [selectedBrand, setSelectedBrand] = useState("")
   const [filteredModels, setFilteredModels] = useState([])
-  const [selectedModel, setSelectedModel] = useState('');
-  
+  const [selectedModel, setSelectedModel] = useState('')
+  const [selectedVehicle, setSelectedVehicle] = useState(0)
+  const [selectedYear, setSelectedYear] = useState("")
 
   const brands = [
     {id: 1, brand: "BMW"},
@@ -45,41 +47,80 @@ function Filtration() {
         setFilteredModels(modelsForBrand);
       }
     }
-  }, [selectedBrand, filteredModels])  
+  }, [selectedBrand, filteredModels])
+
+  const handlevehicle = (value) => {
+    setSelectedVehicle(value)
+  }
+
+  const handleYear = (event) => {
+    setSelectedYear(event.target.value)
+  }
 
   return (
     <div className="filtration">
       <div className="filtration-header">
-        <div className="header-vehicle">🚗</div>
-        <div className="header-vehicle">🚐</div>
-        <div className="header-vehicle">🚲</div>
-        <div className="header-vehicle">🏍️</div>
+        <div className="header-vehicle" onClick={() => {handlevehicle(0)}}>🚗</div>
+        <div className="header-vehicle" onClick={() => {handlevehicle(25)}}>🚐</div>
+        <div className="header-vehicle" onClick={() => {handlevehicle(50)}}>🚲</div>
+        <div className="header-vehicle" onClick={() => {handlevehicle(75)}}>🏍️</div>
+        <div className="actual" style={{top: `${selectedVehicle}%`}}></div>
       </div>
       <h2>Find your dream vehicle</h2>
       <div className="filtration-wrapper">
-        <select className="selection" value={selectedBrand} onChange={handlechange} key={selectedBrand}>
-          <option value="" disabled>- Choose a car -</option>
-          {brands.map((index) => {
-            return (
-            <option key={index.id} value={index.id}>
-              {index.brand}
-            </option>)
-          })}
-        </select>
-        <select className="selection" value={selectedModel} onChange={(e) => setSelectedModel(e.target.value)} disabled={!selectedBrand}>
-          <option value="" disabled>- Choose a model -</option>
-          {filteredModels.length > 0 ? (
-            filteredModels.map((model) => (
-              <option key={model.id} value={model.model}>
-                {model.model}
+        <section>
+          <label>Brand</label>
+          <select className="selection" value={selectedBrand} onChange={handlechange} key={selectedBrand}>
+            <option value="" disabled>Any</option>
+            {brands.map((index) => {
+              return (
+              <option key={index.id} value={index.id}>
+                {index.brand}
+              </option>)
+            })}
+          </select>
+        </section>
+        <section>
+          <label>Model</label>
+          <select className="selection" value={selectedModel} onChange={(e) => setSelectedModel(e.target.value)} disabled={!selectedBrand}>
+            <option value="" disabled>Any</option>
+            {filteredModels.length > 0 ? (
+              filteredModels.map((model) => (
+                <option key={model.id} value={model.model}>
+                  {model.model}
+                </option>
+              ))
+            ) : (
+              <option value="" disabled>
+                No models available
               </option>
-            ))
-          ) : (
-            <option value="" disabled>
-              No models available
-            </option>
-          )}
-        </select>
+            )}
+          </select>
+        </section>
+        <section>
+          <label>registration</label>
+          <select className="selection" onChange={handleYear} value={selectedYear}>
+            <option value="" disabled>Any</option>
+            {registrations.map((index) => {
+              return (
+              <option key={index.id} value={index.id}>
+                {index.year}
+              </option>)
+            })}
+          </select>
+        </section>
+        <section>
+          <label>kilmometers</label>
+          <select className="selection" value={selectedBrand} onChange={handlechange} key={selectedBrand}>
+            <option value="" disabled>Any</option>
+            {brands.map((index) => {
+              return (
+              <option key={index.id} value={index.id}>
+                {index.brand}
+              </option>)
+            })}
+          </select>
+        </section>
       </div>
       <div className="filtration-wrapper">
         <select className="selection" value={selectedBrand} onChange={handlechange}>
