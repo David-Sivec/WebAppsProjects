@@ -43,11 +43,22 @@
   background-color: var(--light-blue);
   padding: 3px;
   border-radius: 3px;
+  transition: all 0.3s;
 }
 
 .more-link::after {
   content: ' →';
   color: var(--dark-bluee);
+}
+
+.more-link:hover {
+  background-color: var(--very-dark-blue);
+  color: var(--white);
+  scale: 1.05;
+}
+
+.more-link:hover::after {
+  color: var(--light-blue);
 }
 
 .best-advertisements-header {
@@ -68,7 +79,7 @@
   overflow-y: auto;
   scroll-snap-type: x mandatory;
   scrollbar-color: var(--border) var(--dark-bluee);
-  gap: 20px;
+  gap: 30px;
   padding: 10px;
   margin-left: 10px;
 }
