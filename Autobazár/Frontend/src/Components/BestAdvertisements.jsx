@@ -14,7 +14,7 @@ function BestAdvertisements() {
     <div className="best-advertisements">
       <div className="best-advertisements-header">
         <h2>Best advertisements</h2>
-        <Link to="/vehicles" className="more-link">See all vehicles</Link>
+        <Link to="/vehicles" className="more-link">All vehicles</Link>
       </div>
       {/* Advertisement cards */}
       <div className="best-advertisement-cards">

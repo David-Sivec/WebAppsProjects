@@ -27,7 +27,7 @@ function HomePage() {
         {/* Cards section showcasing numbers */}
         <Box2 />
         {/* Infinite scroll section with vehicle brands */}
-        <h2>Brands to choose from</h2>
+        <h2>Top brands</h2>
         <InfiniteScroll />
         {/* Recensions section with user reviews */}
         <h2>Recensions</h2>

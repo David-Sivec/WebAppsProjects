@@ -35,9 +35,16 @@
   position: relative;
 }
 
+.menu {
+  width: 35px;
+  height: 30px;
+  cursor: pointer;
+}
+
 .filtration h2 {
   margin-bottom: 20px;
-  text-align: center;
+  margin-left: 5%;
+  text-align: start;
   width: calc(100% - 200px);
 }
 
@@ -62,12 +69,21 @@
   padding: 5px 10px;
   width: 220px;
   background-color: var(--light-blue);
+  color: var(--very-dark-blue);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
   border: none;
   border-radius: 5px;
   transition: all 0.3s;
   cursor: pointer;
   font-size: 1.2em;
   margin-top: 22px;
+}
+
+.filtration-btn svg {
+  width: 30px;
+  height: 30px;
 }
 
 .filtration-btn:hover {
