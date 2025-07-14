@@ -45,6 +45,25 @@
   height: 405px;
 }
 
+.add-advertisement-btn {
+  background-color: var(--light-blue);
+  text-decoration: none;
+  padding: 10px 30px;
+  color: var(--very-dark-blue);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 5px;
+  gap: 15px;
+  transition: all 0.3s;
+}
+
+.add-advertisement-btn:hover {
+  scale: 1.05;
+  background-color: var(--very-dark-blue);
+  color: var(--white);
+}
+
 .cards {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(100%, 1fr));
