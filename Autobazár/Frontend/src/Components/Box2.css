@@ -26,6 +26,8 @@
 .add-advertisement {
   display: flex;
   flex-direction: column;
+  justify-content: center;
+  align-items: center;
   width: 80%;
   height: 320px;
   background-color: var(--dark-bluee);
@@ -54,10 +56,33 @@
   background-color: var(--dark-bluee);
   border-radius: 10px;
   color: var(--white);
-  padding: 20px;
+  padding: 10px;
   margin: 10px 0;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
   height: 100px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  cursor: pointer;
+  justify-content: center;
+  transition: all 0.3s;
+}
+
+.card:hover {
+  scale: 1.05;
+}
+
+.card div {
+  display: flex;
+  width: 60%;
+  gap: 10px;
+  align-items: center;
+  /*justify-content: space-between;*/
+}
+
+.card h3 {
+  color: var(--very-dark-blue);
+  font-size: 1.8em;
 }
 
 .box2 {
