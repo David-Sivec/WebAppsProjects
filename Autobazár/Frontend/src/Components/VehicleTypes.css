@@ -31,8 +31,8 @@
   background-color: var(--dark-bluee);
   border-radius: 10px;
   border: 1px solid var(--border);
-  margin-top: 20px;
   padding: 10px 60px;
+  position: relative;
 }
 
 .more-link {
@@ -86,6 +86,7 @@
   scrollbar-color: var(--border) var(--dark-bluee);*/
   gap: 30px;
   padding: 10px 0;
+  transition: all 0.5s;
 }
 
 .best-advertisement-card {
@@ -121,4 +122,24 @@
   font-size: 1rem;
   color: var(--white);
   margin: 5px;
+}
+
+.arrow-r, .arrow-l {
+  position: absolute;
+  right: 10px;
+  top: 160px;
+  z-index: 100;
+  background-color: var(--very-dark-blue);
+  width: 40px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.arrow-l {
+  left: 10px;
+  display: none;
 }
