@@ -3,7 +3,7 @@ import "./bricks.css"
 //imports components for homepage
 import Filtration from "../Components/Filtration"
 import InfiniteScroll from "../Components/InfiniteScroll"
-import BestAdvertisements from "../Components/BestAdvertisements"
+import VehicleTypes from "../Components/VehicleTypes"
 import Box2 from "../Components/Box2"
 import Contact from "../Components/Contact"
 import Footer from "../Components/Footer"
@@ -23,7 +23,7 @@ function HomePage() {
           <Filtration />
         </div>
         {/* Best advertisements section */}
-        <BestAdvertisements />
+        <VehicleTypes />
         {/* Cards section showcasing numbers */}
         <Box2 />
         {/* Infinite scroll section with vehicle brands */}

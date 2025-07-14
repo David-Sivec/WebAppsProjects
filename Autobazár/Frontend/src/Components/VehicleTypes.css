@@ -32,6 +32,7 @@
   border-radius: 10px;
   border: 1px solid var(--border);
   margin-top: 20px;
+  padding: 10px 60px;
 }
 
 .more-link {
@@ -65,7 +66,7 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin: 0 10px;
+  /*margin: 0 10px;*/
 }
 
 .best-advertisements-header h2 {
@@ -73,26 +74,30 @@
   margin-top: 5px;
 }
 
+.best-advertisements-wrapper {
+  overflow: hidden;
+}
+
 .best-advertisement-cards {
   display: flex;
-  width: calc(100% - 10px);
-  overflow-y: auto;
+  width: 100%;
+  /*overflow-y: auto;
   scroll-snap-type: x mandatory;
-  scrollbar-color: var(--border) var(--dark-bluee);
+  scrollbar-color: var(--border) var(--dark-bluee);*/
   gap: 30px;
-  padding: 10px;
-  margin-left: 10px;
+  padding: 10px 0;
 }
 
 .best-advertisement-card {
-  width: 200px;
+  width: 220px;
   height: 240px;
   border-radius: 8px;
-  background-color: var(--border);
+  background-color: var(--very-dark-blue);
   scroll-snap-align: start;
   scroll-snap-stop: always;
   flex: 0 0 auto;
   transition: all 0.3s;
+  text-align: center;
 }
 
 .best-advertisement-card:hover {
@@ -102,6 +107,7 @@
 .best-advertisement-card img {
   width: 100%;
   height: 150px;
+  padding: 25px;
   border-radius: 5px;
 }
 
