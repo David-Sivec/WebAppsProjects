@@ -1,4 +1,5 @@
 import "./bricks.css"
+import Filtration from "../Components/Filtration"
 
 function Vehicles() {
   return (
@@ -9,8 +10,13 @@ function Vehicles() {
           <p>Explore our extensive collection of vehicles, from cars to trucks, all at unbeatable prices.</p>
         </div>
         <div className="box">
-          <div className="filtration">hi</div>
-          <div className="vehicle-list"></div>
+          <Filtration />
+          <div className="vehicle-list">
+            <div className="vehicle-card">hi</div>
+            <div className="vehicle-card">hi</div>
+            <div className="vehicle-card">hi</div>
+            <div className="vehicle-card">hi</div>
+          </div>
         </div>
       </div>
     </div>

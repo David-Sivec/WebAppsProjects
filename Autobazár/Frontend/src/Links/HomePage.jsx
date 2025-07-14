@@ -7,6 +7,8 @@ import VehicleTypes from "../Components/VehicleTypes"
 import Box2 from "../Components/Box2"
 import Contact from "../Components/Contact"
 import Footer from "../Components/Footer"
+//imports
+import { Link } from "react-router-dom"
 
 function HomePage() {
   //is a platform designed to connect car enthusiasts, buyers, and sellers. Whether you're looking to buy your dream car, sell your vehicle, or simply explore the automotive world, CarConnect has you covered.
@@ -32,9 +34,26 @@ function HomePage() {
         {/* Recensions section with user reviews */}
         <h2>Recensions</h2>
         <div className="recensions">
-          <div className="recension">hi</div>
-          <div className="recension">hi</div>
+          <div className="recension">
+            <div>
+              <img src="./images/profile-picture.png" alt="" className="profile-picture" />
+              <h3>John Doe</h3>
+            </div>
+            <div>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio reprehenderit aliquid labore ad? Nobis quia voluptatem praesentium dolore fugit sapiente facere, amet eaque ratione accusamus impedit, autem quibusdam sed rerum.</p>
+            </div>
+          </div>
+          <div className="recension">
+            <div>
+              <img src="./images/profile-picture.png" alt="" className="profile-picture" />
+              <h3>Adam Novak</h3>
+            </div>
+            <div>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio reprehenderit aliquid labore ad? Nobis quia voluptatem praesentium dolore fugit sapiente facere, amet eaque ratione accusamus impedit, autem quibusdam sed rerum.</p>
+            </div>
+          </div>
         </div>
+        <Link to="/recensions" className="recension-btn">More recensions</Link>
         {/* Contact form section */}
         <h2>Contact us</h2>
         <Contact />
