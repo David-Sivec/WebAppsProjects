@@ -200,7 +200,7 @@ h2 {
   position: relative;
 }
 
-.location {
+.location, .favorite {
   position: absolute;
   top: 10px;
   right: 10px;
@@ -215,6 +215,16 @@ h2 {
   border-radius: 50px;
   overflow: hidden;
   transition: all 0.5s;
+}
+
+.favorite {
+  left: 10px;
+  justify-content: center;
+  padding: 5px;
+}
+
+.fill {
+  fill: var(--light-blue);
 }
 
 .location svg {

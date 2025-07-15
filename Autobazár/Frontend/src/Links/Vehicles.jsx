@@ -1,7 +1,14 @@
 import "./bricks.css"
 import HorizontalFiltration from "../Components/HorizontalFiltration"
+import { useState } from "react"
 
 function Vehicles() {
+  const [heart, setHeart] = useState(false)
+
+  const handleheart = () => {
+    setHeart(!heart)
+  }
+
   return (
     <div className="vehicles">
       <div className="wrapper">
@@ -14,6 +21,9 @@ function Vehicles() {
           <div className="vehicle-list">
             <div className="vehicle-card">
               <img src="./images/bg.jpg" alt="" className="vehicle-card-image" />
+              <div className="favorite" onClick={handleheart}>
+                <svg className={`svg ${heart ? "fill" : ""}`} width="50px" height="50px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <path d="M15.7 4C18.87 4 21 6.98 21 9.76C21 15.39 12.16 20 12 20C11.84 20 3 15.39 3 9.76C3 6.98 5.13 4 8.3 4C10.12 4 11.31 4.91 12 5.71C12.69 4.91 13.88 4 15.7 4Z" stroke="#98CDFF" stroke-width="1.44" stroke-linecap="round" stroke-linejoin="round"></path> </g></svg>
+              </div>
               <div className="location">
                 Slovakia
                 <svg width="40px" height="40px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <path d="M12 21C15.5 17.4 19 14.1764 19 10.2C19 6.22355 15.866 3 12 3C8.13401 3 5 6.22355 5 10.2C5 14.1764 8.5 17.4 12 21Z" stroke="#98CDFF" stroke-width="1.44" stroke-linecap="round" stroke-linejoin="round"></path> <path d="M12 13C13.6569 13 15 11.6569 15 10C15 8.34315 13.6569 7 12 7C10.3431 7 9 8.34315 9 10C9 11.6569 10.3431 13 12 13Z" stroke="#98CDFF" stroke-width="1.44" stroke-linecap="round" stroke-linejoin="round"></path> </g></svg>
@@ -28,6 +38,9 @@ function Vehicles() {
             </div>
             <div className="vehicle-card">
               <img src="./images/bg.jpg" alt="" className="vehicle-card-image" />
+              <div className="favorite" onClick={handleheart}>
+                <svg className={`svg ${heart ? "fill" : ""}`} width="50px" height="50px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <path d="M15.7 4C18.87 4 21 6.98 21 9.76C21 15.39 12.16 20 12 20C11.84 20 3 15.39 3 9.76C3 6.98 5.13 4 8.3 4C10.12 4 11.31 4.91 12 5.71C12.69 4.91 13.88 4 15.7 4Z" stroke="#98CDFF" stroke-width="1.44" stroke-linecap="round" stroke-linejoin="round"></path> </g></svg>
+              </div>
               <div className="location">
                 Poland
                 <svg width="40px" height="40px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <path d="M12 21C15.5 17.4 19 14.1764 19 10.2C19 6.22355 15.866 3 12 3C8.13401 3 5 6.22355 5 10.2C5 14.1764 8.5 17.4 12 21Z" stroke="#98CDFF" stroke-width="1.44" stroke-linecap="round" stroke-linejoin="round"></path> <path d="M12 13C13.6569 13 15 11.6569 15 10C15 8.34315 13.6569 7 12 7C10.3431 7 9 8.34315 9 10C9 11.6569 10.3431 13 12 13Z" stroke="#98CDFF" stroke-width="1.44" stroke-linecap="round" stroke-linejoin="round"></path> </g></svg>
@@ -69,6 +82,7 @@ function Vehicles() {
               </div>
             </div>
           </div>
+          <table>adf</table>
         </div>
       </div>
     </div>
