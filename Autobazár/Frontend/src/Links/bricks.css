@@ -177,6 +177,7 @@ h2 {
   display: grid;
   grid-template-columns: 1fr 2fr;
   width: 100%;
+  gap: 30px;
   margin-top: 20px;
 }
 

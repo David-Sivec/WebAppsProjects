@@ -1,5 +1,5 @@
 import "./bricks.css"
-import Filtration from "../Components/Filtration"
+import HorizontalFiltration from "../Components/HorizontalFiltration"
 
 function Vehicles() {
   return (
@@ -10,7 +10,7 @@ function Vehicles() {
           <p>Explore our extensive collection of vehicles, from cars to trucks, all at unbeatable prices.</p>
         </div>
         <div className="box">
-          <Filtration />
+          <HorizontalFiltration />
           <div className="vehicle-list">
             <div className="vehicle-card">hi</div>
             <div className="vehicle-card">hi</div>
