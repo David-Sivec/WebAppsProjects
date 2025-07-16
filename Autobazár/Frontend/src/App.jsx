@@ -7,6 +7,7 @@ import MyAdvertisements from "./Links/MyAdvertisemets"
 import Contact from "./Links/Contact"
 import Login from "./Links/Login"
 import Recensions from "./Links/Recensions"
+import AdDetails from "./Links/AdDetails"
 //imports components for main page
 import Navigation from './Components/Navigation'
 import { Routes, Route } from 'react-router-dom'
@@ -21,6 +22,7 @@ function App() {
       <Routes>
         <Route path="/" element={<HomePage />} />
         <Route path="/vehicles" element={<Vehicles />} />
+        <Route path="/ad/:id" element={<AdDetails />} />
         <Route path="/my-advertisements" element={<MyAdvertisements />} />
         <Route path="/contact" element={<Contact />} />
         <Route path="/login" element={<Login />} />
