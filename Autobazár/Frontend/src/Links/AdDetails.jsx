@@ -24,6 +24,7 @@ function AdDetail() {
         status: "used",
         fuel: "petrol",
         consumption: "8L/100km",
+        phone: "+421 0999 222 333",
       },
       {
         id: 2,
@@ -39,6 +40,7 @@ function AdDetail() {
         status: "used",
         fuel: "petrol",
         consumption: "8L/100km",
+        phone: "+421 0999 222 333",
       },
       {
         id: 3,
@@ -54,6 +56,7 @@ function AdDetail() {
         status: "used",
         fuel: "diesel",
         consumption: "10L/100km",
+        phone: "+421 0999 222 333",
       },
       {
         id: 4,
@@ -69,6 +72,7 @@ function AdDetail() {
         status: "used",
         fuel: "petrol",
         consumption: "6L/100km",
+        phone: "+421 0999 222 333",
       },
     ];
     const selectedAd = ads.find((a) => a.id === parseInt(id));
@@ -101,6 +105,8 @@ function AdDetail() {
           <button onClick={() => navigate(-1)} className="back-btn">
             Back
           </button>
+          <p><strong>Phone: </strong>{ad.phone}</p>
+          <button className="contact-btn">Contact User</button>
         </section>
       </div>
       <section className="ad-detail-descriptrion">
