@@ -24,7 +24,7 @@ function Vehicles() {
   }
 
   const handleViewDetails = (id) => {
-    navigate(`/ad/${id}`); // Presmerovanie na detailnú stránku s ID
+    navigate(`/vehicles/ad/${id}`); // Presmerovanie na detailnú stránku s ID
   }
 
   return (
