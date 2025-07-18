@@ -373,6 +373,115 @@ h2 {
   color: var(--white);
 }
 
+/*stylings for login subpage*/
+.login {
+  width: 100%;
+  background-color: var(--very-dark-blue);
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.login-container {
+  width: 60%;
+  height: 550px;
+  background-color: var(--dark-bluee);
+  display: flex;
+}
+
+.login-container section {
+  width: 50%;
+  height: 100%;
+  background: none;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.login-input-wrapper {
+  display: flex;
+  flex-direction: column;
+  width: 80%;
+  margin-top: 25px;
+}
+
+.login-input-wrapper label {
+  color: var(--white);
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+}
+
+.login-input {
+  margin-top: 10px;
+  padding: 10px;
+  background-color: var(--very-dark-blue);
+  border: none;
+  outline: none;
+  color: var(--white);
+  border-bottom: 2px solid var(--light-blue);
+}
+
+.login-btn {
+  border: none;
+  background-color: var(--light-blue);
+  padding: 5px;
+  width: 80%;
+  font-size: 1.2em;
+  cursor: pointer;
+  margin-top: 200px;
+  color: var(--very-dark-blue);
+  transition: all 0.3s;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+
+.login-btn:hover {
+  background-color: var(--very-dark-blue);
+  color: var(--white);
+  scale: 1.05;
+}
+
+.login-input-wrapper2 {
+  display: flex;
+  width: 80%;
+  align-items: center;
+  gap: 10px;
+  margin-top: 10px;
+}
+
+.register-section .login-btn {
+  margin-top: 35px;
+}
+
+.login-input-wrapper3 {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+}
+
+.login-input-wrapper3 label {
+  color: var(--white);
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+}
+
+.login-input-wrapper4 {
+  display: flex;
+  gap: 5px;
+}
+
+.login-input-wrapper4 label {
+  color: var(--white);
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+}
+
 @media (max-width: 800px) {
   .introduction {
     height: 800px;

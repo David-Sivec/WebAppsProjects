@@ -25,7 +25,7 @@ function Navigation() {
           <Link to="/vehicles" className='link'>Vehicles</Link>
           <Link to="/my-advertisements" className='link'>My Advertisements</Link>
           <Link to="/contact" className='link'>Contact</Link>
-          <Link to="/login" className='link'>Log in</Link>
+          <Link to="/login" className='link'>Sign in/up</Link>
           <div className={`menu ${isSidebarOpen ? "open" : ""}`} onClick={toogleSidebar}>
             <span className='menu-line line-1'></span>
             <span className='menu-line line-2'></span>
