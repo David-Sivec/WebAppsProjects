@@ -159,6 +159,45 @@
   }
 
   .filtration {
-    height: 900px;
+    height: auto;
+  }
+
+  .filtration-header {
+    width: 100%;
+    height: 100px;
+    flex-direction: row;
+  }
+
+  .header-vehicle {
+    width: 25%;
+    height: 100%;
+  }
+
+  .header-vehicle:hover {
+    padding-right: 0;
+    padding-top: 30px;
+  }
+
+  .actual {
+    width: 25%;
+    height: 100%;
+  }
+
+  .filtration h2 {
+    margin: 0 auto;
+    margin-top: 100px;
+    width: 220px;
+    text-align: end;
+    font-size: 1.5em;
+  }
+
+  .filtration-wrapper {
+    width: 100%;
+    padding: 0;
+    align-items: center;
+  }
+
+  .selection {
+    margin-bottom: 15px;
   }
 }

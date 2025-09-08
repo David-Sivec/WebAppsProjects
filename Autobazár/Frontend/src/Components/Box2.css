@@ -110,3 +110,13 @@
   width: 80%;
   padding-top: 20px;
 }
+
+@media (max-width: 800px) {
+  .box2 {
+    grid-template-columns: 1fr;
+  }
+
+  .add-advertisement-section {
+    margin-right: 0;
+  }
+}
