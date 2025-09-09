@@ -533,4 +533,13 @@ h2 {
     font-size: 1.5em;
     text-align: start;
   }
+
+  .recensions {
+    grid-template-columns: 1fr;
+    width: 100%;
+  }
+
+  .recension {
+    height: auto;
+  }
 }

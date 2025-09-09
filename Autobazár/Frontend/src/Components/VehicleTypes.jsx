@@ -33,7 +33,7 @@ function BestAdvertisements() {
     <div className="best-advertisements">
       <div className="best-advertisements-header">
         <h2>Vehicle types</h2>
-        <Link to="/vehicles" className="more-link">All vehicles</Link>
+        <Link to="/vehicles" className="more-link">All vehicles →</Link>
       </div>
       {/* Advertisement cards */}
       <div className="arrow-r" onClick={() =>{handlearrowR(500, "none", "flex")}} style={{display: display}}>

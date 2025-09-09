@@ -47,19 +47,10 @@
   transition: all 0.3s;
 }
 
-.more-link::after {
-  content: ' →';
-  color: var(--dark-bluee);
-}
-
 .more-link:hover {
   background-color: var(--very-dark-blue);
   color: var(--white);
   scale: 1.05;
-}
-
-.more-link:hover::after {
-  color: var(--light-blue);
 }
 
 .best-advertisements-header {
@@ -142,4 +133,21 @@
 .arrow-l {
   left: 10px;
   display: none;
+}
+
+@media (max-width: 800px) {
+  .best-advertisements {
+    padding: 10px 20px;
+    height: 320px;
+    width: 100%;
+  }
+
+  .best-advertisements-header h2 {
+    font-size: 1.5em;
+  }
+
+  .more-link {
+    font-size: 1em;
+    width: 130px;
+  }
 }

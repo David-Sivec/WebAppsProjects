@@ -113,3 +113,19 @@
     left: 100%;
   }
 }
+
+@media (max-width: 800px) {
+  .infinite-scroll {
+    width: 100%;
+  }
+
+  .brand {
+    scale: 0.7;
+  }
+
+  .brand2 {
+    scale: 0.7;
+  }
+  
+  
+}

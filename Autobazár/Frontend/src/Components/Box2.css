@@ -114,6 +114,7 @@
 @media (max-width: 800px) {
   .box2 {
     grid-template-columns: 1fr;
+    width: 100%;
   }
 
   .add-advertisement-section {
